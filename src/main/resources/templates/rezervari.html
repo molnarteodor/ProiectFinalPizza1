@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='icon' href='/img/rezervare.png' type="img/rezervare.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="/index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <script src="/reservation.js"></script>
+
+    <title>Rezervare</title>
+</head>
+<body>
+
+
+<nav>
+    <ul class="nav-flex-row">
+        <li class="nav-item">
+            <a href="index">Acasă</a>
+        </li>
+        <li class="nav-item">
+            <a href="meniu">Meniu</a>
+        </li>
+        <li class="nav-item">
+            <a href="rezervari">Rezervă o Masă</a>
+        </li>
+        <li class="nav-item">
+            <a href="rezervare">Rezervări</a>
+        </li>
+    </ul>
+</nav>
+
+<section class="section-intro">
+    <header>
+        <h1>Rezervăr-ți propria masă</h1>
+    </header>
+</section>
+
+
+<div class="container">
+    <div class="row-flex">
+        <div class="flex-column-form">
+            <h3>
+                Faceți o rezervare
+            </h3>
+            <form class="media-centered">
+                <div class="form-group text-danger">
+                    <p>
+                        Vă rugăm sa lăsați un numar de telefon pentru a confirma rezervarea
+                    </p>
+                    <input type="name" class="form-control" id="modal-rez-nume" aria-describedby="nameHelp" placeholder="Nume Prenume">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="modal-rez-nr" placeholder="Introdu numărul de telefon">
+                </div>
+                <button type="button" id="modal-save-button" class="btn btn-primary"><a>Rezervă</a></button>
+            </form>
+        </div>
+
+<center>
+<div class="opening-time">
+            <h3>
+                Program
+            </h3>
+            <p>
+                <span>Luni—Vineri: 08:00 — 22:00</span>
+                <span>Sambata: 09:00 — 23:00 </span>
+                <span>Duminica: 10:00 — 17:00</span>
+            </p>
+        </div>
+        <div class="contact-adress">
+            <h3>
+                Contact
+            </h3>
+            <p>
+                <span>0700 000 000</span>
+                <span>Lotus</span>
+            </p>
+        </div>
+</center>
+    </div>
+</div>
+
+<!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+    <iframe src="https://maps.google.com/maps?q=oradea&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            style="border:0" allowfullscreen></iframe>
+</div>
+
+<!--Google Maps-->
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

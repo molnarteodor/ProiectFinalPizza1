@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='icon' href='/img/rezervari.png' type="img/rezervari.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="/index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <script src="/reservation.js"></script>
+
+    <title>Rezervări</title>
+</head>
+<body>
+
+
+<nav>
+    <ul class="nav-flex-row">
+        <li class="nav-item">
+            <a href="index">Acasă</a>
+        </li>
+        <li class="nav-item">
+            <a href="meniu">Meniu</a>
+        </li>
+        <li class="nav-item">
+            <a href="rezervari">Rezervă o Masă</a>
+        </li>
+        <li class="nav-item">
+            <a href="rezervare">Rezervări</a>
+        </li>
+    </ul>
+</nav>
+<section class="section-intro">
+    <header>
+        <h1>Lista Rezervărilor</h1>
+
+    </header>
+</section>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Nume Prenume</th>
+            <th>Numar de telefon</th>
+        </tr>
+        </thead>
+    <tbody>
+        <tr data-th-each=" reservation : ${rezervare}">
+            <td data-th-text="${reservation.nume}"></td>
+            <td data-th-text="${reservation.numarTelefon}"></td>
+            <td><i class="fa fa-trash"></i></td>
+        </tr>
+    </table>
+</tbody>
+    </table>
+    </tbody>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
